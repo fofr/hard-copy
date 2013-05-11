@@ -7,6 +7,4 @@ requirejs.config({
     }
 });
 
-requirejs(['app'], function(app) {
-
-});
+requirejs(['app']);
