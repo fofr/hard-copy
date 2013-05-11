@@ -5,6 +5,7 @@
     "express": "3.1.x",
     "hogan-express": "0.3.x",
     "requirejs": ">=1.0.0",
+    "request": "2.21.x",
     "jasmine-node": "1.7.x"
   },
   "engines": {
