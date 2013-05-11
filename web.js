@@ -1,13 +1,10 @@
-var express = require("express");
-var app = express();
-app.use(express.logger());
+var requirejs = require('requirejs');
 
-app.get('/', function(request, response) {
-  response.send('Hello World!');
+requirejs.config({
+    nodeRequire: require,
+    app: "models/app"
 });
 
-var port = process.env.PORT || 5000;
+requirejs(['app'], function(app) {
 
-app.listen(port, function() {
-  console.log("Listening on " + port);
 });
